@@ -1,0 +1,2 @@
+# node_modules 파일은 우리가 만든것도 아니고 쓸때도 없으므로 이 파일에 적어서 제외하기
+node_modules
