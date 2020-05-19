@@ -66,9 +66,9 @@ bot.on('message', (msg) => {
 
   // 아까전 불러온 명령어들 중에 명령어 이름이 두번째거인 것을 가져오기
   // 예시로 'h!핑'을 치면 '핑'이라는 이름을 가진 명령어를 가져오기
-  const target = commands.find((c) => c.name === cmd)
+  const target = commands.find((c) => c.info.name === cmd)
 
   // 위에서 가져온 명령어를 봇과 메세지 정보를 주고 실행하기
-  target(bot, msg)
+  if (target) target(bot, msg)
 })
 
