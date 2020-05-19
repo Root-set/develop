@@ -6,13 +6,8 @@ module.exports = (bot, msg) => {
 
   channel.send(
 
-    new MessageEmbed()
+    new MessageEmbed().addField('h!도움말','봇의 명령어를 확인할수있습니다.').addField('h!핑','봇의핑을 확인할수있습니다.').addField('h!네코','neko사진이나옵니다.')
       .setColor(Math.floor(Math.random() * 0xffffff))
-      .setTitle("h!핑")
-      .setDescription("봇의핑을 알수가있습니다.")
-      .setTitle("h!네코")
-      .setDescription("neko사진이나옵니다 (nsfw x)")
-
   )
 }
 module.exports.info = { name: '도움말' }
