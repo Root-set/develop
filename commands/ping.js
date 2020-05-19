@@ -4,7 +4,7 @@ module.exports = (bot, msg) => {
 }
 
 // 이 명령어의 이름은 '핑'
-module.exports.name = '핑'
+module.exports.info = { name: '핑' }
 // ?비번뭐지
 // // 엌
 // ..?//뭐지 버그인가
@@ -31,3 +31,8 @@ module.exports.name = '핑'
 //이거맞나?
 //됫다
 // 히익, 또 기다려야되넴...
+//프로필기능만드시죠
+// ㅇㅁㅇ 바쁜데요!
+
+//hmm
+//알겟어요

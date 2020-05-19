@@ -40,6 +40,7 @@ bot.login(token)
 
 // 봇이 준비 되었을때...
 bot.on('ready', () => {
+  bot.user.setActivity('h!도움말 을 쳐서 명령어를 확인!', { type: 'PLAYING' }) 
   // 출력
   console.log(bot.user.username + '이 준비되었어요!')
 })
