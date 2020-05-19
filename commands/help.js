@@ -6,7 +6,7 @@ module.exports = (bot, msg) => {
 
   channel.send(
 
-    new MessageEmbed().addField('h!도움말','봇의 명령어를 확인할수있습니다.').addField('h!핑','봇의핑을 확인할수있습니다.').addField('h!네코','neko사진이나옵니다.')
+    new MessageEmbed().addField('h!도움말','봇의 명령어를 확인할수있습니다.').addField('h!핑','봇의핑을 확인할수있습니다.').addField('h!네코','neko사진이나옵니다.').addField('h!프로필','자신의 프로필을 확인합니다.')
       .setColor(Math.floor(Math.random() * 0xffffff))
   )
 }
