@@ -21,4 +21,4 @@ module.exports = (bot, msg) => {
   
   )
 }
-module.exports.info = { name: '프로필' }
+module.exports.info = { name: '정보' }
