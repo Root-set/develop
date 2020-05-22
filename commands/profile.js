@@ -14,10 +14,13 @@ module.exports = (bot, msg) => {
 
     new MessageEmbed()//프로필 기능 : 닉네임 , 자신 프사 , 아이디 , 디스코드 계정 생성일 
       .setColor(Math.floor(Math.random() * 0xffffff))
-      .addField('닉네임', msg.author.username, true)
-      .addField('아이디', msg.author.id,true)
-      .addField('역할', roles)
+      .addField('Nick', msg.author.username, true)
+      .addField('ID', msg.author.id,true)
+      .addField('Role', roles)
+      .addField('CreatAt',msg.author.createdAt,true)
+      .addField('Last Message',msg.channel.lastMessage,true)
       .setThumbnail(msg.author.displayAvatarURL())
+      .setFooter("제작자-𝓠𝔂𝓪.𝓟𝓔#5124,PMH")
   
   )
 }
