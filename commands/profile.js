@@ -17,7 +17,7 @@ module.exports = (bot, msg) => {
       .addField('Nick', msg.author.username, true)
       .addField('ID', msg.author.id,true)
       .addField('Role', roles)
-      .addField('CreatAt',msg.author.createdAt,true)
+      .addField('CreatedAt',msg.author.createdAt,true)
       .addField('Last Message',msg.channel.lastMessage,true)
       .setThumbnail(msg.author.displayAvatarURL())
       .setFooter("제작자-𝓠𝔂𝓪.𝓟𝓔#5124,PMH")
