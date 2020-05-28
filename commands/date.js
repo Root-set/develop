@@ -9,7 +9,7 @@ module.exports = (bot, msg) => {
 
     new MessageEmbed()
       .setColor(Math.floor(Math.random() * 0xffffff))
-      .setTitle("오늘의 날짜"+Date.now+"입니다.")
+      .setTitle("오늘의 날짜"+new Date().toString()+"입니다.")
       .setThumbnail('https://previews.123rf.com/images/studiobarcelona/studiobarcelona1605/studiobarcelona160500027/56782996-%ED%83%9C%EC%96%91-%EC%95%84%EC%9D%B4%EC%BD%98-.jpg')
 
   )
