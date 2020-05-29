@@ -9,7 +9,7 @@ module.exports = (bot, msg) => {
 
     new MessageEmbed()
       .setColor(Math.floor(Math.random() * 0xffffff))
-      .setImage("https://img.trinets.xyz/api/v1.0.0?target=neko&type=redirect")
+      .setImage("https://img.trinets.xyz/api/v1.0.0?target=neko&type=redirect"*random)
 
   )
 
