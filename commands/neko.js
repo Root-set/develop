@@ -10,7 +10,7 @@ module.exports = (bot, msg) => {
         .setColor(Math.floor(Math.random() * 0xffffff))
         .setTitle("Neko")
         .setImage('https://img.trinets.xyz' + res.text)
-        .setDescription("시간이 약간 소요됩니다.")
+        .setDescription("사진을 불러오는과정에서\n시간이 걸릴수있습니다")
         
     )
   })
