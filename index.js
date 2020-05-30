@@ -41,6 +41,7 @@ bot.login(token)
 
 // 봇이 준비 되었을때...
 bot.on('ready', () => {
+  bot.guilds.cache.forEach((g) => { console.log(g.name) })
   setInterval(() => {
     bot.user.setActivity(activity[Math.floor(Math.random() * activity.length)],{ type: 'PLAYING' })
    }, 10000)
