@@ -42,8 +42,8 @@ bot.login(token)
 // 봇이 준비 되었을때...
 bot.on('ready', () => {
   setInterval(() => {
-    bot.user.setActivity(activity[Math.floor(Math.random() * activity.length)],{type = 'PLAYING'})
-  }, 1000)
+    bot.user.setActivity(activity[Math.floor(Math.random() * activity.length)],{ type: 'PLAYING' })
+   }, 10000)
   // 출력
   console.log(bot.user.username + '이 준비되었어요!')
 })
