@@ -5,7 +5,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 
 // 토큰을 환경변수로 정하기 ("set Token=(토큰)" 으로 설정 가능)
-const token = process.env.Token 
+const token = 'NjcwMjkwMzIyMzY2MDA1MjQ4.XsUo-w.UlfSDtW5YMR2p2OUb9yHon-vzps'
 // 명령어 파일들 읽어오기 {
 
 // 파일을 읽거나 쓸수 있는 fs라는 모듈을 불러오기 (filesystem의 줄임말)
@@ -74,6 +74,6 @@ bot.on('message', (msg) => {
 
   // 위에서 가져온 명령어를 봇과 메세지 정보를 주고 실행하기
   if (target) target(bot, msg)
-})
+  
 })
 
