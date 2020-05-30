@@ -19,6 +19,7 @@ module.exports = (bot, msg) => {
       .addField('Role', roles)
       .addField('CreatedAt',msg.author.createdAt,true)
       .addField('Last Message',msg.channel.lastMessage,true)
+      .addField('등록된 서버',bot.guilds.cache.size,true)
       .setThumbnail(msg.author.displayAvatarURL())
       .setFooter("제작자-𝓠𝔂𝓪.𝓟𝓔#5124,PMH")
   
