@@ -74,5 +74,8 @@ bot.on('message', (msg) => {
 
   // 위에서 가져온 명령어를 봇과 메세지 정보를 주고 실행하기
   if (target) target(bot, msg)
+bot.on('messageDelete', (msg) => {
+  console.log(msg.author.username + '이 ' + msg.content + '를 '+ new Date() + '시에 지웠어요!')
+})
 })
 
