@@ -8,10 +8,10 @@ module.exports = (bot, msg) => {
     channel.send(
       new MessageEmbed()
         .setColor(Math.floor(Math.random() * 0xffffff))
-        .setTitle("Neko")
+        .setTitle("Neko - TriDB")
         .setImage('https://img.trinets.xyz' + res.text)
-        .setDescription("사진을 불러오는과정에서\n시간이 걸릴수있습니다")
-        
+        .setDescription("사진을 불러오는 과정에서\n시간이 걸릴 수 있습니다")
+        .setFooter("출처 : https://img.trinets.xyz ")
     )
   })
 }
