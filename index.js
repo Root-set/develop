@@ -11,6 +11,8 @@ const token = process.env.Token
 // 파일을 읽거나 쓸수 있는 fs라는 모듈을 불러오기 (filesystem의 줄임말)
 const fs = require('fs')
 
+const activity = ['h!도움말을통해 명령어 확인','문의: 𝓠𝔂𝓪.𝓟𝓔#0001','개발중이다냥~']
+
 // 명령어들을 모아둘 배열
 const commands = []
 
@@ -39,7 +41,9 @@ bot.login(token)
 
 // 봇이 준비 되었을때...
 bot.on('ready', () => {
-  bot.user.setActivity('h!도움말 을 쳐서 명령어를 확인!', { type: 'PLAYING' }) 
+  setInterval(() => {
+    bot.user.setActivity(activity[Math.floor(Math.random() * activity.length)],{type = 'PLAYING'})
+  }, 1000)
   // 출력
   console.log(bot.user.username + '이 준비되었어요!')
 })
