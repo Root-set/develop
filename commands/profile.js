@@ -12,7 +12,9 @@ module.exports = (bot, msg) => {
   channel.send(
 
 
-    new MessageEmbed()//프로필 기능 : 닉네임 , 자신 프사 , 아이디 , 디스코드 계정 생성일 
+    new MessageEmbed()
+      .setTitle('내정보')
+      .setDescription('자신의 정보를 불러왔습니다.')//프로필 기능 : 닉네임 , 자신 프사 , 아이디 , 디스코드 계정 생성일 
       .setColor(Math.floor(Math.random() * 0xffffff))
       .addField('Nick', msg.author.username, true)
       .addField('ID', msg.author.id,true)
