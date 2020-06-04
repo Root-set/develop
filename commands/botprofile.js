@@ -17,7 +17,6 @@ module.exports = (bot, msg) => {
       .setThumbnail('https://cdn.discordapp.com/attachments/713393225632710708/714117219411296256/2.jpg')
       .addField('등록된 서버',bot.guilds.cache.size)
       .addField('업타임',bot.uptime/1000)
-      .addField('Math',bot.math.round(bot.uptime))
       .setFooter("제작자-𝓠𝔂𝓪.𝓟𝓔#5124,PMH")
   )
 
