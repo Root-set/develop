@@ -16,7 +16,7 @@ module.exports = (bot, msg) => {
       .setTitle('내정보')
       .setDescription('자신의 정보를 불러왔습니다.')//프로필 기능 : 닉네임 , 자신 프사 , 아이디 , 디스코드 계정 생성일 
       .setColor(Math.floor(Math.random() * 0xffffff))
-      .addField('Nick', msg.author.nickname, true)
+      .addField('Nick', msg.guild.nickname, true)
       .addField('ID', msg.author.id,true)
       .addField('Role', roles)
       .addField('CreatedAt',msg.author.createdAt,true)
