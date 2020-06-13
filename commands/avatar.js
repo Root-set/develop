@@ -10,7 +10,7 @@ module.exports = (bot, msg) => {
     new MessageEmbed()
       .setColor(Math.floor(Math.random() * 0xffffff))
       .setTitle("프로필사진")
-      .setImage(msg.author.displayAvatarURL())
+      .setImage(msg.author.displayAvatarURL({ format : 'png', dynamic: true, size: 1024}))
       .setFooter("제작자-𝓠𝔂𝓪.𝓟𝓔#5124,PMH")
   )
 
