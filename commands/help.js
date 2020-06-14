@@ -16,6 +16,8 @@ module.exports = (bot, msg) => {
       .addField('h!날짜', '오늘의 날짜를 알려줍니다.')
       .addField('h!봇정보','봇에 대한 정보를 불러옵니다.')
       .addField('h!서버정보','서버에 대한 정보를 불러옵니다.')
+      .addField('h!프사', '자신의 프로필 사진을 불러옵니다.')
+      .addField('h!업타임','봇의 업타임을 보여줍니다.')
       .setColor(Math.floor(Math.random() * 0xffffff))
       .setFooter('이용해주셔서 감사합니다.')
   )

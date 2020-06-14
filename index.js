@@ -6,6 +6,7 @@ const bot = new Discord.Client()
 
 // 토큰을 환경변수로 정하기 ("set Token=(토큰)" 으로 설정 가능)
 const token = process.env.Token
+//const token = "NjcwMjkwMzIyMzY2MDA1MjQ4.XuR7Ow.1BMH_66Igqc58e1HR1l7bZ4NqAc"
 // 명령어 파일들 읽어오기 {
 
 // 파일을 읽거나 쓸수 있는 fs라는 모듈을 불러오기 (filesystem의 줄임말)
@@ -67,7 +68,7 @@ bot.on('message', (msg) => {
 
   // 나눠진 것중 두번째꺼를 가져오기
   // 예시로 'h!핑'중 '핑'부분
-  const cmd = splited[1]
+  const cmd = splited[1].split(' ')[0]
 
   // 아까전 불러온 명령어들 중에 명령어 이름이 두번째거인 것을 가져오기
   // 예시로 'h!핑'을 치면 '핑'이라는 이름을 가진 명령어를 가져오기
@@ -77,4 +78,3 @@ bot.on('message', (msg) => {
   if (target) target(bot, msg)
   
 })
-
