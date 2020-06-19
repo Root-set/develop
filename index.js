@@ -1,6 +1,7 @@
 // 모듈 불러오기
 const Discord = require('discord.js')
 const beautify = require('beautify');
+const ytdl = require('ytdl-core');
 
 // 클라이언트(봇) 새로 만들기
 const bot = new Discord.Client()
